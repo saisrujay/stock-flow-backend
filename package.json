@@ -1,5 +1,6 @@
 {
   "name": "backend",
+  "proxy": "https://stock-flow.vercel.app",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",

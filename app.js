@@ -28,14 +28,14 @@ app.use(exp.urlencoded({extended: false}));
 app.use(bodyParser.json());
 // CORS (Cross-Origin Resource Sharing) is a mechanism that allows servers to specify who can access their resources (e.g., APIs) and how they can be accessed from a different origin (domain, protocol, or port). It is a 
 // security measure implemented by web browsers to protect users from unauthorized cross-origin requests.
-app.use(
-    cors({   // // Allow requests from this origin
-        origin: ["http://localhost:3000", "https://stock-flow.vercel.app"],
-        credentials: true,
-      })
-)
+// app.use(
+//     cors({   // // Allow requests from this origin
+//         origin: [ 'https://stock-flow.vercel.app', "http://localhost:3000"],
+//         credentials: true,
+//       })
+// )
 
-// app.use(cors());
+app.use(cors());
 
 // app.use: This is an Express.js method used to add middleware to the application's middleware stack.
 // By using app.use with the "/uploads" URL path and the express.static middleware, any files located in the "uploads" directory will be accessible from the "/uploads" route in your application.
